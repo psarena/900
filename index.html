@@ -29,19 +29,21 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
       padding: 0;
     }
 
-    body {
-      background: linear-gradient(to bottom right, #063FAB, #01258A);
-      background-image: url('icon0.jpg');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      font-family: Arial, sans-serif;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-    }
+   body {
+    background: linear-gradient(to bottom right, #063FAB, #01258A);
+    background-image: url('icon0.jpg');
+    background-size: contain;        /* يخلي الصورة كاملة */
+    background-repeat: no-repeat;    /* يمنع تكرار الصورة */
+    background-position: center;     /* يظبطها في النص */
+    background-color: black;         /* يخلي الفراغات سوداء */
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 
     @font-face {
       font-family: 'logging';
